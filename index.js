@@ -1,5 +1,11 @@
 // "https://randomuser.me/api/?results=24"
 
-fetch("https://randomuser.me/api/?results=24")
-  .then((res) => res.json())
-  .then((data) => console.log(data));
+let userData = [];
+
+const fetchUser = async () => {
+  await fetch("https://randomuser.me/api/?results=24")
+    .then((res) => res.json())
+    .then((data) => (userData = data.results));
+  console.log(userData);
+};
+fetchUser();
