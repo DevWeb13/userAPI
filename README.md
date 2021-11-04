@@ -2,14 +2,14 @@
 
 @author: [DevWeb13](https://twitter.com/DeveloppementW1)
 
-* Récupération depuis une API d'une base de données d'utilisateurs.
-* Génération de la structure HTML en JS.
-* Affichage des données de chaque utilisateur dans leur carte respective en JS.
-* Manipulation de dates en JS.
+* Retrieving from an API a user database.
+* Generation of the HTML structure in JS.
+* Display of each user's data in their respective maps in JS.
+* Manipulation of dates in JS.
 
-Réalisé grace au tutoriel YouTube: ["[Cours Javascript] Apprendre Javascript de A à Z – Les données (4/6)"](https://www.youtube.com/watch?v=Xm9i87uliU8&list=PLEiMYEzpB4QuS8AXU9eAz1aw_WBknPn1E&index=5&t=1647s) de ["From Scratch()"]( https://twitter.com/KobeKenjo).
+Realized thanks to the YouTube tutorial: ["[Cours Javascript] Apprendre Javascript de A à Z – Les données (4/6)"](https://www.youtube.com/watch?v=Xm9i87uliU8&list=PLEiMYEzpB4QuS8AXU9eAz1aw_WBknPn1E&index=5&t=1647s) of ["From Scratch()"]( https://twitter.com/KobeKenjo).
 
-Un grand merci a lui!!
+A big thank you to him!!
 
-# [SITE FINAL](https://devweb13.github.io/userAPI/)
+# [FINAL SITE](https://devweb13.github.io/userAPI/)
 # [Documentation](https://devweb13.github.io/userAPI/docs)
