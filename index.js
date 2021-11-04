@@ -21,6 +21,23 @@ const fetchUser = async () => {
  */
 const userDisplay = async () => {
   await fetchUser();
+
+  /**
+   * Formatting the date in the chosen format
+   *
+   * @param   {Date}  date  Date in ISO format
+   *
+   * @return  {string}        Date in the chosen format
+   */
+  const dateParser = (/** @type {Date} */ date) => {
+    let newDate = new Date(date).toLocaleDateString("fr-FR", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+    return newDate;
+  };
+
   document.body.innerHTML = userData
     .map(
       (user) =>
@@ -28,7 +45,7 @@ const userDisplay = async () => {
         <div class="card">
             <img src=${user.picture.large} alt="photo de ${user.name.last}">
             <h3>${user.name.first}<h3>
-            <p>${user.location.city}, ${user.dob.date}</p>
+            <p>${user.location.city}, ${dateParser(user.dob.date)}</p>
             <em>Membre depuis : ${user.registered.date} jours</em>
         </div>    
         `
