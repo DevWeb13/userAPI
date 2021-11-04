@@ -8,4 +8,16 @@ const fetchUser = async () => {
     .then((data) => (userData = data.results));
   console.log(userData);
 };
-fetchUser();
+
+const userDisplay = async () => {
+  await fetchUser();
+
+  document.body.innerHTML = userData.map(
+    (user) =>
+      `
+  <h3>${user.name.first}<h3>
+  `
+  );
+};
+
+userDisplay();
